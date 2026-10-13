@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="UNEVEN Issue 02: who gets Spain's water, who pays and who decides. With an original GIS analysis of 804 groundwater bodies and 41 sources.">
+<meta property="og:title" content="Who Gets the Water? · UNEVEN">
+<meta property="og:description" content="UNEVEN Issue 02: who gets Spain's water, who pays and who decides. With an original GIS analysis of 804 groundwater bodies and 41 sources.">
+<meta property="og:image" content="share-issue-02.jpg">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<title>Who Gets the Water? · UNEVEN</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;family=Libre+Franklin:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+/* Single light editorial look by choice: paper ground, ink text, copper and teal accents. */
+:root { --paper: #F3F1EC; --ink: #17191E; --copper: #A3421C; color-scheme: light }
+html, body { background: var(--paper); color: var(--ink) }
+body { margin: 0 }
+a { color: var(--copper) } a:hover { color: #6E2A10 }
+a:focus-visible { outline: 2px solid var(--copper); outline-offset: 2px }
+h1, h2, h3 { text-wrap: balance }
+img { max-width: 100% }
+</style>
+</head>
+<body>
+<main style="background: #F3F1EC; color: #17191E; font-family: 'Source Serif 4', Georgia, serif; width: 100%">
+
+<!-- MASTHEAD -->
+<header class="site-head"><div class="wrap">
+<a class="logo" href="index.html" aria-label="UNEVEN home"><span class="bars" aria-hidden="true"><span style="height:10px;background:var(--teal)"></span><span style="height:22px;background:var(--copper)"></span><span style="height:6px;background:var(--slate)"></span><span style="height:16px;background:#B8862B"></span><span style="height:4px;background:var(--plum)"></span></span><span class="word">UNEVEN</span></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="issues.html" aria-current="page">Issues</a><a href="about.html">About</a><a href="write.html">Write for UNEVEN</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<!-- HERO -->
+<section style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 40px">
+<p style="margin: 0 0 20px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Inequality · Water · Power</p>
+<h1 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(48px, 9vw, 120px); line-height: 0.95; letter-spacing: -0.02em; max-width: 1050px">Who Gets the Water?</h1>
+<p style="margin: 32px 0 0; font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; max-width: 780px; color: #2B2E35">Strawberries from Huelva, lettuce from Murcia, a dry lagoon in Doñana: Spain is running short of water in the very regions that export the most of it. Who pumps, who pays and who decides is less a question of rainfall than of power.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 8px 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">
+<span>Words and analysis: <strong style="color: #17191E">Eugenio Mincione</strong></span>
+<span>About 17 minutes</span>
+</div>
+</section>
+
+<!-- HERO GRAPHIC: water tiles -->
+<figure style="max-width: 1180px; margin: 0 auto 72px; padding: 0 24px">
+<div style="background: #17191E; color: #F3F1EC; padding: clamp(24px, 4vw, 44px)">
+<p style="margin: 0 0 22px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #E2B8A3">Five flows that decide who gets Spain's water</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; font-family: 'Libre Franklin', sans-serif">
+<div style="background: #1F5E6B; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">01</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Ag</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Irrigation</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">15,495</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #CFE6E0">hm³ a year</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">water distributed to farms, 2018</span>
+</div>
+<div style="background: #A3421C; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">02</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Ur</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Cities and homes</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">4,267</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #F0C9B7">hm³ a year</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">supplied to urban networks, 2024</span>
+</div>
+<div style="background: #3E4450; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">03</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Lk</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Leaks</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">624</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #C9CCD3">hm³ a year</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">lost in urban networks, 2024</span>
+</div>
+<div style="background: #8A5F14; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">04</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Tr</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Tagus–Segura</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">600</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #F2DDB0">hm³ a year, legal cap</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">transfer to the south-east</span>
+</div>
+<div style="background: #5B3A6B; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">05</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Dñ</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Doñana</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">~100</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #E1CFEA">hm³ a year</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">pumped around the wetland, estimate</span>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">1 hm³ (cubic hectometre) = 1 billion litres. Irrigation: INE (2020), latest edition of the agricultural water survey. Urban supply and leaks: INE (2026). Transfer cap: MITECO (2026a); 600 hm³ to the Segura basin plus 50 hm³ to the Guadiana. Doñana: an estimate that Green et al. (2024) describe as highly uncertain, because pumping is not directly measured. The years differ, so the tiles show orders of magnitude, not a budget.</figcaption>
+</figure>
+
+<article style="max-width: 700px; margin: 0 auto; padding: 0px 24px 0">
+<p style="margin: 0 0 24px; font-size: 21px; line-height: 1.65"><span style="float: left; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 92px; line-height: 0.8; padding: 8px 12px 0 0; color: #A3421C">S</span>pain is usually described as a country that is drying out. The pictures are familiar: cracked reservoir beds, village church towers rising out of empty lakes, water lorries in Catalonia, a lagoon in Doñana that has turned into a dusty plain. Climate change is real, and the south and east of the peninsula will very likely become drier still. But the pictures hide a second story. Spain's water crisis is also a crisis of distribution: of who is allowed to take water, where it is taken from, and who carries the cost when there is not enough.</p>
+</article>
+<article style="max-width: 700px; margin: 0 auto; padding: 0px 24px 0">
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">This essay asks a simple question: who gets the water? The argument: in Spain, scarcity is produced as much by decisions as by the weather. A model built on irrigated export agriculture has turned the driest basins into the most intensively used ones. Aquifers are being drawn down faster than they refill, wetlands and lagoons pay the bill, and the institutions that allocate water give the largest users a strong voice. None of this is a secret. What is missing is a political answer to the question of who should give way.</p>
+</article>
+
+<!-- CHAPTER 1 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 1</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">A dry country, or a thirsty one?</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Spain's rainfall is famously uneven. Galicia and the Cantabrian coast are green and wet; the south-east around Murcia and Almería is semi-arid. To bridge that gap, the twentieth century built one of the largest dam networks in the world. Today the reservoirs on the mainland can hold about 56,000 hm³; in February 2026 they were 83 per cent full (MITECO, 2026b). Yet even in wet years, some basins remain in permanent deficit.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The European Commission measures this with the Water Exploitation Index plus (WEI+), the share of renewable freshwater that is actually consumed. Above 20 per cent a region counts as water-scarce; above 40 per cent the scarcity is severe. Spain as a whole averaged just under 20 per cent in 2017–2021. But in the Guadalquivir basin the index stood at 48 per cent, in the Guadiana at 50, in the Júcar at 72 and in the Segura at 100 per cent: on average, everything that flows is used (European Commission, 2025).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Climate change will tighten this squeeze. For the Mediterranean, the IPCC expects less rainfall (medium confidence) and, with high confidence, a decline in annual runoff of between 5 and 70 per cent depending on the region and the warming scenario (Ali et al., 2022). For Spain, the public research centre CEDEX projects that average runoff could fall by 11 to 14 per cent by mid-century compared with 1961–2000, and by up to 24 per cent by 2100 under a high-emissions scenario, with the Segura and Júcar among the hardest hit at around 37 per cent (Barranco et al., 2018). The basins that are already over-used are the ones that will lose the most.</p>
+</article>
+
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 1</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">Where everything that flows is used</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Water Exploitation Index plus (WEI+), annual average. Above 20%: water scarcity. Above 40%: severe scarcity.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-family: 'Libre Franklin', sans-serif">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Segura</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 100.0%; background: #A3421C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">100%</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Júcar</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 72.0%; background: #A3421C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">72%</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Guadiana</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 50.0%; background: #C46A43; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">50%</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Guadalquivir</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 48.0%; background: #C46A43; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">48%</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Spain, average 2017–21</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 19.9%; background: #D9A58C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">20%</div></div>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Source: European Commission (2025), assessment of Spain's third river basin management plans. Basin values as reported by the Commission; the national figure is the 2017–2021 average. Several Spanish plans do not report a basin-wide WEI+, which the Commission says may underestimate stress.</figcaption>
+</figure>
+
+<!-- CHAPTER 2 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 2</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">The thirsty field</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">So who uses the water? The clearest answer comes from the national statistics office. In 2018, the latest year for which the agricultural water survey has been published, 15,495 hm³ of water were distributed to Spanish farms for irrigation (INE, 2020). In 2024, all the public networks that supply homes, businesses and city services together received 4,267 hm³ (INE, 2026). The years differ, but the order of magnitude is clear: irrigation takes roughly three and a half times as much water as all of Spain's towns and cities.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Irrigated land is the engine of Spanish agriculture. According to the agriculture ministry's crop survey, 3.71 million hectares were irrigated in 2023, about 23 per cent of cultivated land (MAPA, 2024). That land generates around two-thirds of the value of Spain's crop production (MAPA, 2022). Much of it is exported. In 2025, Spain exported fresh fruit and vegetables worth 18.7 billion euros; by volume, 84 per cent went to other EU countries, according to the growers' association FEPEX (as reported by Forbes España, 2026). A lettuce in a Munich supermarket or a punnet of strawberries in Amsterdam carries water from aquifers in Murcia or Huelva with it.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Researchers call this virtual water: the water embedded in traded goods. Through its grain trade, Spain is in fact a net importer of virtual water, with imports rising in dry years (Novo et al., 2009). The problem is not the national balance but the geography: the water that leaves in fruit and vegetables is taken from precisely the basins that are already overdrawn. Garrido et al. (2010) therefore argue that the useful question is not how much water a country trades, but how much economic value and how many jobs each cubic metre generates, and at what ecological cost.</p>
+</article>
+
+<!-- STATS -->
+<section style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #17191E; color: #F3F1EC; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 36px 56px">
+<div style="flex: 1 1 260px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(64px, 9vw, 104px); line-height: 0.9; color: #E2B8A3">3.6×</div>
+<p style="margin: 14px 0 0; font-family: 'Libre Franklin', sans-serif; font-size: 16px; line-height: 1.5">as much water goes to irrigation as to all urban public supply (2018 vs 2024).</p>
+<p style="margin: 8px 0 0; font-family: 'Libre Franklin', sans-serif; font-size: 13px; color: #B9B6AE">INE 2020; INE 2026</p>
+</div>
+<div style="flex: 1 1 260px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(64px, 9vw, 104px); line-height: 0.9; color: #E2B8A3">⅔</div>
+<p style="margin: 14px 0 0; font-family: 'Libre Franklin', sans-serif; font-size: 16px; line-height: 1.5">of the value of Spain's crop production comes from irrigated land, about 23% of the cultivated area.</p>
+<p style="margin: 8px 0 0; font-family: 'Libre Franklin', sans-serif; font-size: 13px; color: #B9B6AE">MAPA 2022; MAPA 2024</p>
+</div>
+</div>
+</section>
+
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 2</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">Irrigation is concentrated in the south and the interior</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Water distributed to farms for irrigation by region, 2018, in hm³</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-family: 'Libre Franklin', sans-serif">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Andalucía</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 97.1%; background: #1F5E6B; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">4,176</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Castilla y León</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 51.8%; background: #4F8A93; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">2,227</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Aragón</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 48.2%; background: #4F8A93; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">2,072</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Extremadura</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 41.3%; background: #4F8A93; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">1,778</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Castilla-La Mancha</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 35.4%; background: #4F8A93; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">1,524</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">C. Valenciana</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 31.1%; background: #4F8A93; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">1,337</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Cataluña</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 23.4%; background: #8FB5B9; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">1,006</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Región de Murcia</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 11.6%; background: #8FB5B9; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">501</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Navarra</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 10.1%; background: #8FB5B9; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">435</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Other regions</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 10.2%; background: #8FB5B9; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">439</div></div>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Source: INE (2020), Encuesta sobre el uso del agua en el sector agrario, 2018. "Other regions" combines La Rioja and all remaining regions. Total: 15,495 hm³. By technique: drip 40%, gravity 33%, sprinkler 27% of the volume.</figcaption>
+</figure>
+
+<!-- CHAPTER 3 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 3</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">The efficiency paradox</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">For two decades, Spain's official answer to scarcity has been technology. Between 2002 and 2015, modernisation programmes planned for more than 2.3 million hectares, with a budget of around 7.6 billion euros, upgraded 1.79 million hectares, mostly by replacing open channels and flooding with pressurised pipes and drip lines; public subsidies covered about 60 per cent of the capital costs (Berbel et al., 2019). Today, 58 per cent of Spain's irrigated land uses localised, mostly drip, irrigation and 81 per cent uses one of the systems the ministry classifies as efficient (MAPA, 2024). For 2021–2027, more than 2.1 billion euros of public and private investment is planned for further modernisation, about 700 million of it through the EU recovery plan (MAPA, 2022).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">At the level of the field, this works: studies reviewed by Berbel et al. (2019) found that modernised schemes apply on average about a third less water. At the level of the river basin, the picture is different. Water that used to flow back from leaky channels into rivers and aquifers was already being reused downstream. When farmers save water at the field, they often use it to irrigate more land or to switch to thirstier, more profitable crops. The water that actually evaporates from the basin can stay the same or even rise. Grafton et al. (2018) call this the paradox of irrigation efficiency, and economists speak of a rebound effect (Berbel et al., 2015).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">A review of the international evidence concludes that efficient irrigation technology "should not be viewed as a tool for achieving water conservation"; if conservation is the goal, policies that reallocate water between uses, for example from irrigation to the environment, are needed (Pérez-Blanco et al., 2020). Spanish researchers warned early that the gains were getting lost in translation between the farm and the basin (Lopez-Gunn et al., 2012). There is also an energy cost: pumping water through pressurised networks uses many times more electricity than gravity irrigation (Berbel et al., 2019). Modernisation made Spanish irrigation more productive. It did not, by itself, give any water back to rivers, wetlands or aquifers.</p>
+</article>
+
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 3</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">How saving water can use more of it</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">The rebound effect of irrigation modernisation, simplified</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 220px; background: #1F5E6B; color: #FFFFFF; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.14em">STEP 1</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Less water per hectare</span>
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.5">Drip lines replace open channels. Each field needs about a third less water.</span>
+</div>
+<div style="flex: 1 1 220px; background: #8A5F14; color: #FFFFFF; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.14em">STEP 2</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">The "saved" water stays on the farm</span>
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.5">Rights are not reduced. The water irrigates new land or thirstier crops.</span>
+</div>
+<div style="flex: 1 1 220px; background: #A3421C; color: #FFFFFF; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.14em">STEP 3</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Less water returns</span>
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.5">Leaks used to recharge rivers and aquifers. Now more of the water evaporates.</span>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Based on Grafton et al. (2018), Berbel et al. (2015, 2019) and Pérez-Blanco et al. (2020). Whether consumption at basin level actually rises depends on local rules; Berbel et al. (2019) describe the basin-scale effect in Spain as uncertain.</figcaption>
+</figure>
+
+<!-- GIS ANALYSIS -->
+<section style="background: #FFFFFF; margin: 72px 0 0; padding: 64px 24px 56px; border-top: 4px solid #1F5E6B">
+<article style="max-width: 700px; margin: 0 auto">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #1F5E6B">UNEVEN Analysis · Original GIS study</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Mapping the hidden overdraft</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Rivers and reservoirs can be seen and measured. The largest overdraft, however, happens underground. To map it, I combined the official spatial data that Spain reported to the European Environment Agency for its third round of river basin plans (2022–2027) in a GIS: the boundaries of all 25 river basin districts and of all 804 groundwater bodies, each with its quantitative status and the significant pressures acting on it (EEA, 2025). A groundwater body is in poor quantitative status when long-term abstraction exceeds the available resource, or when pumping damages connected rivers and wetlands (Directive 2000/60/EC). I counted the bodies in poor status per basin, intersected their area with the basin boundaries in an equal-area projection, and checked which pressures the authorities themselves recorded for them.</p>
+</article>
+<figure style="max-width: 1100px; margin: 32px auto 0">
+<img src="map-issue-02.webp" alt="Map of mainland Spain and the Balearic Islands showing groundwater bodies in poor quantitative status in copper. They cluster in the south and east: the Segura basin has 38 of 63 bodies in poor status, the Júcar 38 of 105, the Guadalquivir 32 of 86, the Andalusian Mediterranean basins 29 of 67, the Guadiana 11 of 20 and the Balearic Islands 29 of 87. The northern Atlantic basins and the Tagus have none. Doñana, the Tablas de Daimiel and the Mar Menor are marked, as is the route of the Tagus–Segura transfer." style="width: 100%; height: auto; display: block">
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Figure 4 · Groundwater bodies in poor and good quantitative status, third river basin plans (2022–2027), by river basin district. Labels show the number of bodies in poor status. Canary Islands (5 of 33 in poor status, including all 4 bodies on Tenerife), Ceuta and Melilla not shown. ETRS89 Lambert azimuthal equal-area projection. Data: EEA (2025), WISE Water Framework Directive reporting, as reported by Spain; country borders: Natural Earth (2024). Transfer route schematic. Analysis and map: Eugenio Mincione.</figcaption>
+</figure>
+<div style="max-width: 1040px; margin: 40px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-family: 'Libre Franklin', sans-serif">
+<div style="background: #1F5E6B; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">203 of 804</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">groundwater bodies are in poor quantitative status: one in four</div>
+</div>
+<div style="background: #A3421C; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">90%</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">of them (182) list agricultural abstraction as a significant pressure</div>
+</div>
+<div style="background: #17191E; color: #F3F1EC; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">87%</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">of the over-abstracted bodies lie in six southern and eastern basins covering 39% of Spain</div>
+</div>
+<div style="background: #8A5F14; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">0</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">over-abstracted bodies in the Tagus, Miño-Sil, Galicia-Costa and Western Cantabrian basins</div>
+</div>
+</div>
+<article style="max-width: 700px; margin: 40px auto 0">
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The result is a clear geography. Of Spain's 804 groundwater bodies, 203 are in poor quantitative status, one in four, matching the figure in the European Commission's review (European Commission, 2025). They are not spread evenly. Six basins in the south and east, the Segura, Júcar, Guadalquivir, Guadiana, the Andalusian Mediterranean basins and the Balearic Islands, contain 177 of the 203, or 87 per cent, while covering 39 per cent of the country's land area. In the Segura, 38 of 63 bodies are over-abstracted, and over-abstracted aquifers underlie 35 per cent of the basin. In the Guadiana, more than half of all bodies are in poor status, most of them in the vast aquifers of La Mancha around the Tablas de Daimiel. The wet northern basins and the Tagus, the river that sends water south through the transfer, have none.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The second result concerns cause. For 182 of the 203 bodies in poor status, 90 per cent, the river basin authorities themselves list abstraction for agriculture as a significant pressure. Almost half, 97, are linked to groundwater-dependent terrestrial ecosystems such as wetlands, springs and riverside forests, which suffer when the water table falls. And for 48 bodies the plans already concede that good status will not be reached by 2027. The Commission notes that the share in poor status has remained the same "without any progress since the 2nd RBMPs" and points to a large, insufficiently controlled pressure from illegal abstraction, and to water meters that have been required by law since 2009 but are still not installed everywhere (European Commission, 2025).</p>
+<div style="border-left: 4px solid #1F5E6B; padding: 4px 0 4px 20px; margin: 8px 0 24px"><p style="margin: 0; font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.6; color: #2B2E35"><strong>Method and limits.</strong> Status and pressures are taken as reported by Spain to the EEA; they reflect assessments made around 2019–2020. Bodies on several depth horizons overlap, so area shares are calculated from the union of all poor-status bodies. A body can have several pressures; "agricultural abstraction" means the code P3-1 is among them. The number of bodies is not a measure of volume: one large aquifer in La Mancha can weigh more than dozens of small ones on Mallorca.</p></div>
+</article>
+</section>
+
+<!-- CHAPTER 4 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 4</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Doñana: when a wetland pays</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Nowhere is the cost of over-pumping more visible than in Doñana, the great wetland at the mouth of the Guadalquivir and a UNESCO World Heritage Site. The marshes and lagoons are fed by the Almonte-Marismas aquifer, which also supplies the strawberry and berry farms of Huelva and the beach resort of Matalascañas. Scientists have documented the consequences for decades. A recent synthesis by more than twenty researchers finds that groundwater levels in the deep aquifer have fallen by up to 20 metres, that the water table has dropped by half a metre to two metres in some areas, and that the flow of the Rocina stream has fallen by 62 per cent (Green et al., 2024). Landsat images of 316 ponds from 1985 to 2018 show that about 59 per cent of them have not flooded since at least 2013 (de Felipe et al., 2023).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">In 2021 the Court of Justice of the European Union ruled that Spain had failed to protect Doñana: the river basin plan did not account for illegal abstraction or for the water drawn for the resort, and since 2006 Spain had failed to take appropriate measures to prevent significant disturbance of the protected habitats (CJEU, 2021). Two years later the decline became impossible to ignore. Santa Olalla, the largest lagoon and the last considered permanent, was completely dry in late August 2023, for the second year in a row, something that had never happened in two consecutive summers before (EBD-CSIC, 2024).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The politics followed the hydrology, but in the opposite direction. In April 2023 the governing Partido Popular and Vox began processing in the Andalusian parliament a bill that would have regularised irrigation on land around Doñana that had been farmed without water rights. After protests from scientists, the European Commission and the national government, the bill was suspended. In November 2023 the regional and national governments signed an agreement worth more than 1.4 billion euros. Its core is a buy-out: farmers in the northern crown of Doñana who stop cultivating and renaturalise or reforest their land receive 100,000 euros per hectare, paid over five years (Ayuntamiento de Almonte, 2023). The deal shows two things at once: that taking water back from agriculture is possible, and how expensive it becomes once a farming economy has been built on water that was never legally there.</p>
+</article>
+
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 5</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">Doñana: two decades of drawdown, one court ruling</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Key moments for the wetland and its aquifer</p>
+<ol style="list-style: none; margin: 0; padding: 0; font-family: 'Libre Franklin', sans-serif">
+<li style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid #D6D2C8">
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #17191E">2006</span><span style="font-size: 16px; line-height: 1.5">Date from which, according to the EU Court, Spain failed to prevent significant disturbance of protected habitats.</span></li>
+<li style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid #D6D2C8">
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #17191E">2013</span><span style="font-size: 16px; line-height: 1.5">By now, around 59% of 316 monitored ponds have stopped flooding; most have not flooded since.</span></li>
+<li style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid #D6D2C8">
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #A3421C">2021</span><span style="font-size: 16px; line-height: 1.5">The EU Court of Justice rules against Spain over groundwater abstraction (case C-559/19).</span></li>
+<li style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid #D6D2C8">
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #A3421C">2022–23</span><span style="font-size: 16px; line-height: 1.5">Santa Olalla, the last permanent lagoon, dries out completely two summers in a row.</span></li>
+<li style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid #D6D2C8">
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #1F5E6B">2023</span><span style="font-size: 16px; line-height: 1.5">A regional bill to regularise irrigation is suspended; a €1.4bn agreement offers €100,000 per hectare to stop irrigating.</span></li>
+</ol>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Sources: CJEU (2021); de Felipe et al. (2023); Green et al. (2024); EBD-CSIC (2024); Ayuntamiento de Almonte (2023).</figcaption>
+</figure>
+
+<!-- CHAPTER 5 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 5</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Water that travels</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">If one aquifer is empty, bring water from somewhere else. That idea runs through Spanish water policy like a river. The geographer Erik Swyngedouw (2015) has described how, from the late nineteenth century onwards, engineers and politicians promised to "correct" Spain's uneven nature with dams and canals, a project of hydraulic modernisation that was continued under the Franco dictatorship and gave irrigators a central place in the nation's self-image. Its most famous product is the Tagus–Segura transfer, which since 1979 has carried water nearly 300 kilometres from the reservoirs of the upper Tagus to the south-east.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">By law, up to 600 hm³ a year can be sent to the Segura basin, 400 of them for irrigation and 110 for drinking water (MITECO, 2026a). In practice, far less arrives: on average about 336 hm³ a year, and the legal maximum was reached only once, in 2000/01 (Morote & Rico, 2018). In the drought year 2022/23, only about 116 hm³ were transferred for irrigation (MITECO, 2026a). Meanwhile, the Tagus itself suffered. Downstream of the dams, at Aranjuez, minimum flows were long criticised as too low for a living river. The revised basin plan approved in 2023 therefore raises the ecological flow at Aranjuez step by step, from about 6 to 8.65 cubic metres per second by 2027, which reduces what can be sent south in dry years (Real Decreto 35/2023).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The transfer has thus become a zero-sum conflict between regions. Castilla-La Mancha, where the water comes from, sees it as an export of its future; Murcia and Alicante, where it is used, see any cut as a threat to their farms and jobs. The Segura basin authority puts total demand at 1,805 hm³ a year, 1,526 of them agricultural, against resources that include 340 hm³ of desalinated water and 312 hm³ brought in from other basins (CHS, 2022). Whichever figure one uses for the gap, it is filled in part by over-pumping, which is why the Segura stands out on the map.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The Mar Menor shows the end of that chain. The coastal lagoon south of Murcia receives nitrate-rich water from the intensively irrigated Campo de Cartagena, both on the surface and through the aquifer. After decades of rising nutrient loads, the lagoon flipped in 2016 into a turbid state, known locally as the sopa verde or green soup, in which the seagrass meadows below about two metres depth died (Pérez-Ruzafa et al., 2019); in 2019 and 2021 oxygen collapses killed tonnes of fish (MITECO, n.d.). Measured nitrate inflows reach up to around a tonne of nitrogen a day on the surface and up to almost four tonnes underground (Álvarez-Rogel et al., 2020). In 2022, after a popular legislative initiative, the Spanish parliament made the Mar Menor the first ecosystem in Europe with legal personhood (Ley 19/2022), a status the Constitutional Court upheld in 2024.</p>
+</article>
+
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 6</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">The Tagus–Segura transfer: the promise and the flow</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Water sent to the Segura basin, hm³ per year</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-family: 'Libre Franklin', sans-serif">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Legal cap</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 96.8%; background: #3E4450; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">600</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Average since 1979</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 54.2%; background: #8A5F14; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">336</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">2022/23, for irrigation</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 18.7%; background: #A3421C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">116</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">2023/24, for irrigation</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 28.5%; background: #C46A43; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #FFFFFF; font-weight: 700; font-size: 15px; white-space: nowrap">177</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">2024/25, for irrigation</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 39.5%; background: #D9A58C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; color: #17191E; font-weight: 700; font-size: 15px; white-space: nowrap">245</div></div>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Sources: legal cap and recent irrigation volumes: MITECO (2026a); long-term average: Morote & Rico (2018). The yearly bars count only water transferred for irrigation, so they are not directly comparable with the long-term average for all uses.</figcaption>
+</figure>
+
+<!-- CHAPTER 6 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 6</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Who decides</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Water in Spain is public property, managed by river basin authorities, the confederaciones hidrográficas. Spain invented the model in 1926 and it is often praised for organising water by catchment rather than by administrative borders. But who sits at the table matters. Under the Water Law, water users must hold at least one third of the seats on the governing board of each basin authority and at least one third on its water council, and they make up the majority of the operating boards that coordinate how the water of each system is used (Real Decreto Legislativo 1/2001). In most basins, the largest users are the irrigators' associations, the comunidades de regantes. Environmental groups, scientists and citizens are represented, but as minorities.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The same imbalance shows up in prices. The Water Framework Directive requires member states to recover the cost of water services, including environmental costs (Directive 2000/60/EC, Article 9). According to the Commission, Spain recovers about 70 per cent overall: 73 per cent from households, 80 per cent from industry and 67 per cent from agriculture, with tariffs giving weak incentives to save (European Commission, 2025). The average unit cost of urban water, including sewerage and treatment, was 2.02 euros per cubic metre in 2024, and households used 128 litres per person per day (INE, 2026). Markets for water rights exist, but they are small: in 2007 trades amounted to less than one per cent of national use, although they reached around 4 to 5 per cent in the Júcar and Segura (Palomo-Hierro et al., 2015), and there are no official figures on many informal deals (De Stefano & Hernández-Mora, 2016).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">When drought hits, the hierarchy becomes visible. In early 2024, with the Ter–Llobregat reservoirs at about 16 per cent, Catalonia declared a drought emergency for some six million people in the Barcelona area, with a cap of 200 litres per person per day on municipal use and cuts of up to 80 per cent for irrigation (El Independiente, 2024). Coastal cities increasingly turn to desalination; Spain operates around 765 plants producing some 5 million cubic metres a day (Europa Press, 2024). Desalinated water is reliable but costly and energy-intensive, at around 3 to 4 kWh per cubic metre (Europa Press, 2024; MITECO, 2022). Who pays for this new water, farmers, tourists, households or the taxpayer, is one of the most important and least discussed questions of Spanish water policy. Tourism adds to local peaks, too, even though its share of total use is small (Gössling et al., 2012; Hof & Blázquez-Salom, 2015).</p>
+</article>
+
+<!-- THREE LEVERS -->
+<section style="max-width: 1040px; margin: 48px auto; padding: 0 24px">
+<div style="background: #E9E6DF; padding: clamp(24px, 4vw, 40px)">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Three levers</p>
+<h3 style="margin: 0 0 24px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.1">What it would take to share water differently</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<div style="background: #FFFFFF; border-top: 4px solid #1F5E6B; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #1F5E6B">Lever 1</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Measure and enforce</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Meters on every well, closure of illegal abstraction, public data on who pumps how much. Required since 2009, still incomplete (European Commission, 2025).</p>
+</div>
+<div style="background: #FFFFFF; border-top: 4px solid #A3421C; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #A3421C">Lever 2</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Take back, not just save</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Tie modernisation subsidies to smaller water rights, so that savings return to rivers and aquifers (Pérez-Blanco et al., 2020). Doñana shows buy-outs are possible.</p>
+</div>
+<div style="background: #FFFFFF; border-top: 4px solid #8A5F14; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5F14">Lever 3</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Share the costs and the seats</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Full cost recovery, including environmental costs, and drought rules decided with stronger voices for ecosystems and citizens.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<section style="max-width: 1040px; margin: 72px auto 0; padding: 0 24px">
+<div style="border-top: 4px solid #17191E; padding-top: 48px">
+<article style="max-width: 700px; margin: 0 auto">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Conclusion</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">A river is a decision</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">So who gets the water? On the evidence gathered here, the answer is: mainly those who were there first with a pump and a right, and those who sit on the boards that allocate it. Irrigation takes roughly three and a half times as much water as all of Spain's towns and cities (INE, 2020, 2026). One in four groundwater bodies is over-abstracted, almost all of them under pressure from agriculture and concentrated in the dry south and east (EEA, 2025; this analysis). Two decades of efficiency investment have made farming more productive without giving water back to nature (Berbel et al., 2019). And the bill lands on those without a seat at the table: a lagoon in Doñana, the seagrass of the Mar Menor, the upper Tagus, and the people who will live in these basins when the climate is hotter and drier.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">That does not make Spain's farmers the villains of this story. Irrigated agriculture supplies much of Europe's fresh fruit and vegetables, sustains rural employment in regions with few alternatives, and was encouraged by a century of state policy. The point is a different one. Scarcity in Spain is not just a natural fact to be managed with more concrete, more pipes and more desalination plants. It is the result of choices about how much irrigated land a dry basin can carry, whose wells are tolerated, and whose losses count.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Three questions will decide what comes next. Will Spain cap total abstraction in its overdrawn basins, rather than only making each drop more efficient? Will the costs of new water be shared fairly between farms, cities and tourism? And will rivers, aquifers and wetlands gain a real voice in the institutions that divide the water? For a geography of inequality, this means looking past the empty reservoir in the evening news to the wells, canals and boardrooms where the water is actually allocated.</p>
+<p style="margin: 0 0 24px; font-size: 21px; line-height: 1.65">Spain will not run out of rain. Whether it runs out of water depends on who is asked to give way first, and on whether the answer is still the lagoon.<span style="color: #A3421C"> ■</span></p>
+</article>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section style="max-width: 700px; margin: 24px auto 0; padding: 0 24px">
+<div style="border-top: 1px solid #17191E; padding-top: 18px; font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.6; color: #2B2E35"><strong style="color: #17191E">Eugenio Mincione</strong> studies geography, specialising in geoinformatics and applied physical geography, alongside political science at LMU Munich. He is currently based in Madrid.</div>
+</section>
+
+<!-- REFERENCES -->
+<section style="background: #E9E6DF; margin-top: 72px; padding: 64px 24px 80px">
+<div style="max-width: 1040px; margin: 0 auto">
+<h2 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 36px">References</h2>
+<p style="margin: 0 0 32px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; line-height: 1.6; color: #4A4D55; max-width: 760px">This article draws on peer-reviewed research, official statistics (INE, MAPA, MITECO), EU law and assessments, and open spatial data reported to the European Environment Agency. The four news sources are marked as such and are used only where no primary source was available. The GIS analysis and all graphics are original. Citation style: APA 7.</p>
+<ol style="margin: 0; padding: 0 0 0 20px; columns: 2 340px; column-gap: 48px; font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.55; color: #2B2E35">
+<li style="margin: 0 0 14px; break-inside: avoid">Ali, E., Cramer, W., Carnicer, J., Georgopoulou, E., Hilmi, N. J. M., Le Cozannet, G., &amp; Lionello, P. (2022). Cross-chapter paper 4: Mediterranean region. In H.-O. Pörtner et al. (Eds.), <em>Climate change 2022: Impacts, adaptation and vulnerability</em> (pp. 2233–2272). Cambridge University Press. <a href="https://doi.org/10.1017/9781009325844.021">doi:10.1017/9781009325844.021</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Álvarez-Rogel, J., Barberá, G. G., Maxwell, B., Guerrero-Brotons, M., Díaz-García, C., Martínez-Sánchez, J. J., Sallent, A., Martínez-Ródenas, J., González-Alcaraz, M. N., Jiménez-Cárceles, F. J., Tercero, C., &amp; Gómez-Cerezo, R. (2020). The case of Mar Menor eutrophication: State of the art and description of tested nature-based solutions. <em>Ecological Engineering, 158</em>, 106086. <a href="https://doi.org/10.1016/j.ecoleng.2020.106086">doi:10.1016/j.ecoleng.2020.106086</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ayuntamiento de Almonte. (2023, November 27). <em>Almonte acoge la firma del acuerdo histórico por Doñana entre la Junta y el Gobierno</em> [Press release].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Barranco, L. M., Dimas, M., Jiménez, A., &amp; Estrada, F. (2018). Nueva evaluación del impacto futuro del cambio climático en los recursos hídricos en España. <em>Ingeniería Civil, 191</em>, 34–54.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Berbel, J., Expósito, A., Gutiérrez-Martín, C., &amp; Mateos, L. (2019). Effects of the irrigation modernization in Spain 2002–2015. <em>Water Resources Management, 33</em>(5), 1835–1849. <a href="https://doi.org/10.1007/s11269-019-02215-w">doi:10.1007/s11269-019-02215-w</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Berbel, J., Gutiérrez-Martín, C., Rodríguez-Díaz, J. A., Camacho, E., &amp; Montesinos, P. (2015). Literature review on rebound effect of water saving measures and analysis of a Spanish case study. <em>Water Resources Management, 29</em>(3), 663–678. <a href="https://doi.org/10.1007/s11269-014-0839-0">doi:10.1007/s11269-014-0839-0</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Confederación Hidrográfica del Segura [CHS]. (2022, November 29). <em>Nota de prensa: Consejo Nacional del Agua, Plan Hidrológico de la Demarcación del Segura 2022–2027</em>.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Court of Justice of the European Union [CJEU]. (2021). <em>Judgment of 24 June 2021, European Commission v Kingdom of Spain (Doñana), C-559/19</em>. ECLI:EU:C:2021:512.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">de Felipe, M., Aragonés, D., &amp; Díaz-Paniagua, C. (2023). Thirty-four years of Landsat monitoring reveal long-term effects of groundwater abstractions on a World Heritage Site wetland. <em>Science of the Total Environment, 880</em>, 163329. <a href="https://doi.org/10.1016/j.scitotenv.2023.163329">doi:10.1016/j.scitotenv.2023.163329</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">De Stefano, L., &amp; Hernández-Mora, N. (2016). Los mercados informales de agua en España: Una visión de conjunto. In J. A. Gómez-Limón &amp; J. Calatrava (Coords.), <em>Los mercados de agua en España: Presente y perspectivas</em> (pp. 97–126). Cajamar Caja Rural.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy. (2000). <em>Official Journal of the European Communities, L 327</em>, 1–73.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">El Independiente. (2024, January 31). Cataluña decreta la emergencia por sequía para 6 millones de personas [News article].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Estación Biológica de Doñana–CSIC [EBD-CSIC]. (2024, February 1). <em>Doñana hace balance del 2023: sequía, altas temperaturas y claros declives de especies</em> [Press release].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Europa Press. (2024, April 15). La desalación, defendida por el sector y cuestionada por el ecologismo. <em>iAgua</em> [News article, data from AEDyR].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">European Commission. (2025). <em>Third river basin management plans: Member State report Spain</em> (Commission Staff Working Document SWD(2025) 24 final).</li>
+<li style="margin: 0 0 14px; break-inside: avoid">European Environment Agency [EEA]. (2025). <em>WISE Water Framework Directive database: Groundwater bodies, groundwater body pressures and river basin districts, 2022 reporting (third RBMPs)</em> [Data set, WISE_WFD/WFD2022 map services]. Retrieved October 10, 2026, from https://water.discomap.eea.europa.eu</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Forbes España. (2026, February 24). La exportación de frutas y hortalizas alcanza los 18.666 millones de euros en 2025, un 4% más, según Fepex [News article].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Garrido, A., Llamas, M. R., Varela-Ortega, C., Novo, P., Rodríguez-Casado, R., &amp; Aldaya, M. M. (2010). <em>Water footprint and virtual water trade in Spain: Policy implications</em>. Springer. <a href="https://doi.org/10.1007/978-1-4419-5741-2">doi:10.1007/978-1-4419-5741-2</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Gössling, S., Peeters, P., Hall, C. M., Ceron, J.-P., Dubois, G., Lehmann, L. V., &amp; Scott, D. (2012). Tourism and water use: Supply, demand, and security. An international review. <em>Tourism Management, 33</em>(1), 1–15. <a href="https://doi.org/10.1016/j.tourman.2011.03.015">doi:10.1016/j.tourman.2011.03.015</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Grafton, R. Q., Williams, J., Perry, C. J., Molle, F., Ringler, C., Steduto, P., Udall, B., Wheeler, S. A., Wang, Y., Garrick, D., &amp; Allen, R. G. (2018). The paradox of irrigation efficiency. <em>Science, 361</em>(6404), 748–750. <a href="https://doi.org/10.1126/science.aat9314">doi:10.1126/science.aat9314</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Green, A. J., Guardiola-Albert, C., Bravo-Utrera, M. Á., Bustamante, J., Camacho, A., Camacho, C., Contreras-Arribas, E., Espinar, J. L., Gil-Gil, T., Gomez-Mestre, I., Heredia-Díaz, J., Kohfahl, C., Negro, J. J., Olías, M., Revilla, E., Rodríguez-González, P. M., Rodríguez-Rodríguez, M., Ruiz-Bermudo, F., Santamaría, L., … Díaz-Delgado, R. (2024). Groundwater abstraction has caused extensive ecological damage to the Doñana World Heritage Site, Spain. <em>Wetlands, 44</em>(2), 20. <a href="https://doi.org/10.1007/s13157-023-01769-1">doi:10.1007/s13157-023-01769-1</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Hof, A., &amp; Blázquez-Salom, M. (2015). Changing tourism patterns, capital accumulation, and urban water consumption in Mallorca, Spain: A sustainability fix? <em>Journal of Sustainable Tourism, 23</em>(5), 770–796. <a href="https://doi.org/10.1080/09669582.2014.991397">doi:10.1080/09669582.2014.991397</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Instituto Nacional de Estadística [INE]. (2020). <em>Encuesta sobre el uso del agua en el sector agrario. Año 2018</em> [Press release]. <a href="https://ine.es/prensa/euasa_2018.pdf">ine.es</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Instituto Nacional de Estadística [INE]. (2026). <em>Estadística sobre el suministro y saneamiento del agua. Año 2024</em> [Press release]. <a href="https://ine.es/dyngs/Prensa/ESSA2024.htm">ine.es</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ley 19/2022, de 30 de septiembre, para el reconocimiento de personalidad jurídica a la laguna del Mar Menor y su cuenca. (2022). <em>Boletín Oficial del Estado</em>. <a href="https://www.boe.es/eli/es/l/2022/09/30/19">boe.es</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Lopez-Gunn, E., Zorrilla, P., Prieto, F., &amp; Llamas, M. R. (2012). Lost in translation? Water efficiency in Spanish agriculture. <em>Agricultural Water Management, 108</em>, 83–95. <a href="https://doi.org/10.1016/j.agwat.2012.01.005">doi:10.1016/j.agwat.2012.01.005</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio de Agricultura, Pesca y Alimentación [MAPA]. (2022, December 15). <em>Luis Planas: El Gobierno apuesta por un regadío eficiente para asegurar una producción estable de alimentos</em> [Press release].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio de Agricultura, Pesca y Alimentación [MAPA]. (2024, August 9). <em>El Ministerio de Agricultura, Pesca y Alimentación constata un nuevo aumento del regadío eficiente en el campo español</em> [Press release, ESYRCE 2023]. La Moncloa.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio para la Transición Ecológica y el Reto Demográfico [MITECO]. (2022). <em>Informe de viabilidad: Ampliación de la desalinizadora de Torrevieja</em> (ACUAMED).</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio para la Transición Ecológica y el Reto Demográfico [MITECO]. (2026a). <em>Acueducto Tajo-Segura: Informe de situación, enero 2026</em>.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio para la Transición Ecológica y el Reto Demográfico [MITECO]. (2026b, February 24). <em>La reserva hídrica española se encuentra al 83%</em> [Press release].</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ministerio para la Transición Ecológica y el Reto Demográfico [MITECO]. (n.d.). <em>Mar Menor: Problemática actual</em>. Retrieved October 2026.</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Morote Seguido, Á. F., &amp; Rico Amorós, A. M. (2018). Perspectivas de funcionamiento del Trasvase Tajo-Segura (España): Efectos de las nuevas reglas de explotación e impulso de la desalinización como recurso sustitutivo. <em>Boletín de la Asociación de Geógrafos Españoles, 79</em>, Article 2754. <a href="https://doi.org/10.21138/bage.2754">doi:10.21138/bage.2754</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Natural Earth. (2024). <em>Admin 0 – Countries, 1:50m</em> [Data set]. naturalearthdata.com</li>
+<li style="margin: 0 0 14px; break-inside: avoid">Novo, P., Garrido, A., &amp; Varela-Ortega, C. (2009). Are virtual water "flows" in Spanish grain trade consistent with relative water scarcity? <em>Ecological Economics, 68</em>(5), 1454–1464. <a href="https://doi.org/10.1016/j.ecolecon.2008.10.013">doi:10.1016/j.ecolecon.2008.10.013</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Palomo-Hierro, S., Gómez-Limón, J. A., &amp; Riesgo, L. (2015). Water markets in Spain: Performance and challenges. <em>Water, 7</em>(2), 652–678. <a href="https://doi.org/10.3390/w7020652">doi:10.3390/w7020652</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Pérez-Blanco, C. D., Hrast-Essenfelder, A., &amp; Perry, C. (2020). Irrigation technology and water conservation: A review of the theory and evidence. <em>Review of Environmental Economics and Policy, 14</em>(2), 216–239. <a href="https://doi.org/10.1093/reep/reaa004">doi:10.1093/reep/reaa004</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Pérez-Ruzafa, A., Campillo, S., Fernández-Palacios, J. M., García-Lacunza, A., García-Oliva, M., Ibañez, H., Navarro-Martínez, P. C., Pérez-Marcos, M., Pérez-Ruzafa, I. M., Quispe-Becerra, J. I., Sala-Mirete, A., Sánchez, O., &amp; Marcos, C. (2019). Long-term dynamic in nutrients, chlorophyll a, and water quality parameters in a coastal lagoon during a process of eutrophication for decades, a sudden break and a relatively rapid recovery. <em>Frontiers in Marine Science, 6</em>, 26. <a href="https://doi.org/10.3389/fmars.2019.00026">doi:10.3389/fmars.2019.00026</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Real Decreto 35/2023, de 24 de enero, por el que se aprueba la revisión de los planes hidrológicos de las demarcaciones hidrográficas del Cantábrico Occidental, Guadalquivir, Ceuta, Melilla, Segura y Júcar, y de la parte española de las demarcaciones hidrográficas del Cantábrico Oriental, Miño-Sil, Duero, Tajo, Guadiana y Ebro. (2023). <em>Boletín Oficial del Estado</em>, 35. <a href="https://www.boe.es/eli/es/rd/2023/01/24/35">boe.es</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Real Decreto Legislativo 1/2001, de 20 de julio, por el que se aprueba el texto refundido de la Ley de Aguas. (2001). <em>Boletín Oficial del Estado</em>. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2001-14276">boe.es</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Swyngedouw, E. (2015). <em>Liquid power: Contested hydro-modernities in twentieth-century Spain</em>. MIT Press.</li>
+</ol>
+</div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+<span>UNEVEN · The geography of who wins and who pays</span>
+<span><a href="https://www.instagram.com/uneven.magazine/">Instagram @uneven.magazine</a> · <a href="contact.html">Contact</a></span>
+</div></footer>
+</body>
+</html>
