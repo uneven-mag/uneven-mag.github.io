@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="UNEVEN Issue 03: why Berlin's best-off neighbourhoods stay cool in a heatwave, and who sleeps in the hottest nights. With an original GIS analysis of 536 planning areas and five Landsat summer scenes.">
+<meta property="og:title" content="Hotter for Some · UNEVEN">
+<meta property="og:description" content="UNEVEN Issue 03: why Berlin's best-off neighbourhoods stay cool in a heatwave, and who sleeps in the hottest nights. Original GIS analysis of 536 planning areas.">
+<meta property="og:image" content="share-issue-03.jpg">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<title>Hotter for Some · UNEVEN</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;family=Libre+Franklin:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<main style="background: #F3F1EC; color: #17191E; font-family: 'Source Serif 4', Georgia, serif; width: 100%">
+
+<!-- MASTHEAD -->
+<header class="site-head"><div class="wrap">
+<a class="logo" href="index.html" aria-label="UNEVEN home"><span class="bars" aria-hidden="true"><span style="height:10px;background:var(--teal)"></span><span style="height:22px;background:var(--copper)"></span><span style="height:6px;background:var(--slate)"></span><span style="height:16px;background:#B8862B"></span><span style="height:4px;background:var(--plum)"></span></span><span class="word">UNEVEN</span></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="issues.html" aria-current="page">Issues</a><a href="about.html">About</a><a href="write.html">Write for UNEVEN</a><a href="contact.html">Contact</a></nav>
+</div></header>
+
+<!-- HERO -->
+<section style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 40px">
+<p style="margin: 0 0 20px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Inequality · Heat · Health</p>
+<h1 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(48px, 9vw, 120px); line-height: 0.95; letter-spacing: -0.02em; max-width: 1050px">Hotter for Some</h1>
+<p style="margin: 32px 0 0; font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; max-width: 780px; color: #2B2E35">At midday in summer, the built-up surfaces of Moabit's Huttenkiez are on average seven and a half degrees hotter than those of Nikolassee. Berlin's heatwaves fall on the whole city, but the shade does not. Satellite data and the city's climate model for 536 neighbourhoods show who stays cool and who lies awake at night.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 8px 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">
+<span>Words and analysis: <strong style="color: #17191E">Eugenio Mincione</strong></span>
+<span>About 15 minutes</span>
+</div>
+</section>
+
+<!-- HERO GRAPHIC: heat tiles -->
+<figure style="max-width: 1180px; margin: 0 auto 72px; padding: 0 24px">
+<div style="background: #17191E; color: #F3F1EC; padding: clamp(24px, 4vw, 44px)">
+<p style="margin: 0 0 22px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #E2B8A3">Five numbers on Berlin's unequal heat</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; font-family: 'Libre Franklin', sans-serif">
+<div style="background: #A3421C; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">01</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Hk</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Huttenkiez, Moabit</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">+3.6 °C</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #F0C9B7">surface, vs city median</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">at midday in summer; 24% of residents receive welfare benefits</span>
+</div>
+<div style="background: #1F5E6B; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">02</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Nk</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Nikolassee</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">−3.9 °C</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #CFE6E0">surface, vs city median</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">at midday in summer; 4% of residents receive welfare benefits</span>
+</div>
+<div style="background: #3E4450; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">03</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Tn</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Tropical nights</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">22 vs 2</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #C9CCD3">nights not below 20 °C, 2024</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">Alexanderplatz vs Dahlem weather stations</span>
+</div>
+<div style="background: #8A5F14; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">04</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Sh</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Shade gap</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">3%</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #EAD7B0">of residents</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">of high-status areas live in the hottest fifth of Berlin (others: 17–27%)</span>
+</div>
+<div style="background: #5E3A6E; padding: 18px; display: flex; flex-direction: column; gap: 4px; min-height: 240px; box-sizing: border-box">
+<span style="font-size: 14px; font-weight: 600">05</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1">Ht</span>
+<span style="font-size: 15px; font-weight: 700; margin-bottom: 12px">Heat deaths</span>
+<span style="font-family: 'DM Serif Display', Georgia, serif; font-size: 34px; line-height: 1">~3,000</span>
+<span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #DCC9E3">in Germany a year</span>
+<span style="font-size: 14px; line-height: 1.4; margin-top: 6px">estimated: about 3,100 in 2023 and 2,800 in 2024</span>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Tiles 1, 2 and 4: this analysis (Landsat 8/9 surface temperature, mean of five summer scenes 2019–2025, built-up areas only; social data: SenSBW, 2024). Tile 3: Abgeordnetenhaus Berlin (2025), stations of the German Weather Service; a tropical night is one in which the temperature does not fall below 20 °C. Tile 5: an der Heiden (2025), Robert Koch Institute.</figcaption>
+</figure>
+<!-- CHAPTER 1 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 1</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Two summers in one city</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Huttenstraße in Moabit, a weekday in July. The pavement is still warm at midnight, the courtyards of the old tenements hold the day's heat like ovens, and the few street trees cast thin shade. Some fourteen kilometres to the south-west, in Nikolassee, the same sun falls on gardens, lakes and the edge of the Grunewald forest. Both places are Berlin. They do not have the same summer.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Climatologists call this the urban heat island. Asphalt, stone and roofs soak up sunlight during the day and release it at night; buildings block the wind; there is little soil or vegetation to cool the air by evaporation. For air temperature, the effect is strongest at night. In 2024, the German Weather Service station at Alexanderplatz recorded 22 tropical nights, nights in which the temperature did not fall below 20 °C. The station in leafy Dahlem recorded two (Abgeordnetenhaus Berlin, 2025).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Research from many cities shows that this heat is not shared out at random. In a study of 25 cities around the world, poorer neighbourhoods were exposed to more urban heat in 72 per cent of cases (Chakraborty et al., 2019). Across 683 European cities, urban form, from building density to the amount of green space, explains around 70 per cent of how unequally surface heat is distributed (Mashhoodi &amp; Muñoz Unceta, 2024). And a study of 14 European metropolitan areas, Berlin among them, found that lower-income residents, tenants and immigrants everywhere receive less cooling from urban greenery than homeowners and the well-off (Rocha et al., 2024).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">This issue asks what that looks like in Berlin, neighbourhood by neighbourhood. Who gets the shade, and who is left with the heat?</p>
+</article>
+<!-- CHAPTER 2 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 2</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Who a heatwave kills</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Heat stress is the leading climate-related cause of premature death in Europe (Rocha et al., 2024). In the summer of 2022 alone, an estimated 61,672 people in 35 European countries died from heat, 8,173 of them in Germany; relative to population, women were hit 56 per cent harder than men (Ballester et al., 2023). The Robert Koch Institute estimates about 3,100 heat-related deaths in Germany in 2023 and 2,800 in 2024 (an der Heiden, 2025). In Berlin, about five per cent of all deaths between 2001 and 2010 could be statistically linked to high temperatures, most of them among people aged 65 and over (Scherer et al., 2014).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Heat rarely appears on a death certificate. It kills by pushing an already weak heart, lung or kidney past its limit, and it kills most reliably at night, when the body cannot recover from the day. That is why the people at greatest risk are those who are old, ill, alone, and stuck indoors in a flat that never cools down. Almost 240,000 Berliners are 80 or older (Ärztekammer Berlin, 2026).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Money decides how well people can escape. A survey of Berlin households found that 37 per cent of those with a monthly income of at least €5,000 had air conditioning, and that residents of dense, closed blocks of flats perceived the most heat stress (Iqbal et al., 2025). A shaded garden, a top-floor flat with insulation or without, a weekend house in Brandenburg, the option to work from somewhere cooler: each of these is a way to buy distance from the heat. Those who cannot afford them stay where it is hottest.</p>
+</article>
+
+<!-- GIS ANALYSIS -->
+<section style="background: #FFFFFF; margin: 72px 0 0; padding: 64px 24px 56px; border-top: 4px solid #1F5E6B">
+<article style="max-width: 700px; margin: 0 auto">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #1F5E6B">UNEVEN Analysis · Original GIS study</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Mapping who gets the shade</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">To map Berlin's heat, I used the thermal sensors of the Landsat 8 and 9 satellites. They measure how hot the ground, roofs and treetops are, the land surface temperature, recorded at about 100 metres and delivered on a 30-metre grid. I selected five largely cloud-free summer scenes covering the whole city, spread over the years 2019 to 2025 and taken at around midday local time (clouds were masked; on 11 August 2022 about a quarter of the city was obscured), the hottest of them on 2 July 2025, when the median surface temperature in Berlin's built-up areas reached 44 °C (USGS Landsat Collection 2 Level-2). To make days with different weather comparable, I expressed every pixel as the difference from that day's city-wide median, kept only pixels inside residential and other built-up blocks, so that forests, lakes and airfields do not distort the picture, and averaged the five days.</p>
+
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">I then aggregated these values to Berlin's 542 planning areas (Planungsräume), small neighbourhoods of about 7,000 residents on average, and joined them with the city's official social monitoring for 2023, the Monitoring Soziale Stadtentwicklung (SenSBW, 2024). It rates 536 of these areas on a four-step social status index, from high to very low, based on unemployment, benefit receipt, child poverty and children in single-parent households. For night-time heat, I added the city's own climate model, which simulates the air temperature at 4 a.m. on a calm summer night for every block in Berlin (SenSBW &amp; GEO-NET, 2025). Together the 536 areas are home to 3.85 million people.</p>
+
+</article>
+<figure style="max-width: 1180px; margin: 32px auto 0">
+<img src="map-issue-03.webp" alt="Two maps of Berlin side by side. Left: surface temperature of built-up areas at midday in summer, compared with the city median, in planning areas. The south-west (Steglitz-Zehlendorf), the far north (Frohnau) and the south-east (Köpenick) are 2 °C or more cooler; a hot belt stretches from Spandau through Charlottenburg, Moabit, Wedding and Mitte to Neukölln and Tempelhof, often more than 2 °C hotter. Right: social status of the planning areas. High-status areas are concentrated in the south-west, the north and the eastern outskirts; low and very low status in Wedding, Moabit, northern Neukölln, Spandau, the Märkisches Viertel and Marzahn-Hellersdorf. The cool areas on the left largely match the high-status areas on the right." style="width: 100%; height: auto; display: block">
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Figure 1 · Left: land surface temperature of built-up blocks relative to the city-wide median of each day, mean of five Landsat 8/9 scenes (26 July 2019, 24 June 2022, 11 August 2022, 24 August 2024, 2 July 2025; overpass around 12:00 CEST; WRS-2 path 193, row 023), by planning area (LOR 2021). A check with all twelve June–August scenes of 2019–2025 with less than 10% cloud cover gives a nearly identical map (r = 0.98). Right: status index of the Monitoring Soziale Stadtentwicklung 2023, data as of 31 December 2022. Data: USGS Landsat Collection 2 Level-2 via Microsoft Planetary Computer; SenSBW (2024); block geometry: Umweltatlas Berlin. ETRS89 / UTM 33N. Analysis and map: Eugenio Mincione.</figcaption>
+</figure>
+<div style="max-width: 1040px; margin: 40px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; font-family: 'Libre Franklin', sans-serif">
+<div style="background: #1F5E6B; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">1.9 °C</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">cooler: built-up areas in high-status neighbourhoods, compared with the rest of the city</div>
+</div>
+<div style="background: #A3421C; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">3%</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">of residents of high-status areas live in the hottest fifth of Berlin's neighbourhoods</div>
+</div>
+<div style="background: #17191E; color: #F3F1EC; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">12 of 12</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">clear summer scenes from 2019–2025 show the same gap, between 1.3 and 3.8 °C</div>
+</div>
+<div style="background: #8A5F14; color: #FFFFFF; padding: 22px">
+<div style="font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 52px; line-height: 1">0.56</div>
+<div style="margin-top: 8px; font-size: 15px; line-height: 1.45">vegetation index in high-status areas, against 0.46 elsewhere: greenery accounts statistically for about 60% of the gap</div>
+</div>
+</div>
+<article style="max-width: 700px; margin: 40px auto 0">
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The first result is a clear dividing line. The 86 planning areas with a high social status, home to 520,000 people, are on average 1.9 °C cooler at midday than the rest of the city. The gap appears on every one of the five days, from 1.4 °C on the mildest to 2.1 °C on 24 June 2022; on the hottest day, 2 July 2025, it was 1.9 °C. Put differently: only 3 per cent of people in high-status areas live in the hottest fifth of Berlin's neighbourhoods. Among residents of areas with medium status, the share is 23 per cent; with low status, 27 per cent; with very low status, 17 per cent (Figure 2).</p>
+
+</article>
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 2</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">Who lives in the hottest fifth of Berlin</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Share of residents living in the 20% of planning areas with the highest midday surface temperature, by social status of their area</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-family: 'Libre Franklin', sans-serif">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px" title="High status: 2.9% of 520,438 residents">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">High status</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 9.7%; background: #1F5E6B; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; font-weight: 700; font-size: 15px; white-space: nowrap; border-radius: 0 4px 4px 0"></div><span style="padding-left: 10px; font-weight: 700; font-size: 15px; color: #17191E; align-self: center; white-space: nowrap">3%</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px" title="Medium status: 22.5% of 2,542,025 residents">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Medium status</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 75.0%; background: #C46A43; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; font-weight: 700; font-size: 15px; white-space: nowrap; border-radius: 0 4px 4px 0"><span style="color: #FFFFFF">23%</span></div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px" title="Low status: 26.9% of 416,993 residents">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Low status</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 89.7%; background: #A3421C; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; font-weight: 700; font-size: 15px; white-space: nowrap; border-radius: 0 4px 4px 0"><span style="color: #FFFFFF">27%</span></div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px" title="Very low status: 17.4% of 369,853 residents">
+<span style="flex: 0 0 210px; font-size: 15px; font-weight: 600">Very low status</span>
+<div style="flex: 1 1 300px; height: 34px; background: #EEEBE4; display: flex"><div style="width: 58.0%; background: #C46A43; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box; font-weight: 700; font-size: 15px; white-space: nowrap; border-radius: 0 4px 4px 0"><span style="color: #FFFFFF">17%</span></div></div>
+</div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Figure 2 · Population-weighted. Hottest fifth: the 20% of the 536 rated planning areas with the highest mean surface temperature anomaly (see Figure 1); 763,909 residents live there, 14,960 of them in high-status areas. Data: USGS Landsat Collection 2; SenSBW (2024). Analysis: Eugenio Mincione.</figcaption>
+</figure>
+<article style="max-width: 700px; margin: 0 auto">
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Is this simply the difference between the inner city and the suburbs? Partly. Berlin's poorer areas cluster in the dense Wilhelminian tenement districts within and around the S-Bahn ring, and in large housing estates on the edge, while many of its wealthiest areas are villa suburbs near forests and lakes. But the gap survives when distance is held constant (Figure 3). Within six kilometres of the centre, everyone swelters: high-status and other areas are almost equally hot. Six to twelve kilometres out, high-status areas are 1.3 °C cooler than their neighbours at the same distance. Beyond twelve kilometres, 1.9 °C. A statistical model confirms it: neighbourhoods with more people on benefits are hotter even at the same distance from the centre.</p>
+
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">What separates them is green. Measured with the satellite vegetation index (NDVI), the built-up blocks of high-status areas are clearly greener, 0.56 against 0.46. Greenery within the built-up blocks, gardens, courtyards and street trees, statistically accounts for around 70 per cent of the differences in midday surface heat between neighbourhoods; with greenery in the model, distance to the centre adds nothing. An increase of 0.1 in the vegetation index goes with about 1.2 °C less surface heat. (Both measures come from the same satellite images, so this is an association, not proof of cause.) Even at equal greenery, high-status areas remain about 0.7 °C cooler, so vegetation accounts for roughly 60 per cent of the gap, not all of it.</p>
+
+</article>
+<figure style="max-width: 1040px; margin: 40px auto; padding: 0 24px">
+<div style="background: #FFFFFF; border-top: 4px solid #17191E; padding: 32px clamp(20px, 4vw, 44px) 36px">
+<p style="margin: 0 0 6px; font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Figure 3</p>
+<h3 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.15">The cool gap grows with distance from the centre</h3>
+<p style="margin: 0 0 28px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; color: #4A4D55">Midday surface temperature of built-up areas, difference from city median, by distance from the city centre (Brandenburg Gate)</p>
+<div style="font-family: 'Libre Franklin', sans-serif">
+<div style="display: flex; gap: 22px; flex-wrap: wrap; font-size: 14px; color: #4A4D55; margin-bottom: 18px">
+<span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #1F5E6B; vertical-align: -1px; margin-right: 6px"></span>High-status areas</span>
+<span><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #A3421C; vertical-align: -1px; margin-right: 6px"></span>All other areas</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 16px">
+<span style="flex: 0 0 130px; font-size: 15px; font-weight: 600">Under 6 km</span>
+<div style="flex: 1 1 300px; position: relative; height: 44px">
+<div style="position: absolute; left: 55.6%; top: 0; bottom: 0; border-left: 1px dashed #B9B3A6"></div>
+<div style="position: absolute; left: 79.6%; width: 4.7%; top: 21px; height: 2px; background: #CFC9BC"></div>
+<div title="High-status areas, Under 6 km: +1.08 °C (10 areas)" style="position: absolute; left: calc(79.6% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #1F5E6B; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<div title="Other areas, Under 6 km: +1.29 °C (165 areas)" style="position: absolute; left: calc(84.2% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #A3421C; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<span style="position: absolute; left: 81.9%; top: -2px; transform: translateX(-50%); font-size: 13px; font-weight: 700; white-space: nowrap; color: #17191E">0.2 °C</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 16px">
+<span style="flex: 0 0 130px; font-size: 15px; font-weight: 600">6–12 km</span>
+<div style="flex: 1 1 300px; position: relative; height: 44px">
+<div style="position: absolute; left: 55.6%; top: 0; bottom: 0; border-left: 1px dashed #B9B3A6"></div>
+<div style="position: absolute; left: 38.9%; width: 29.3%; top: 21px; height: 2px; background: #CFC9BC"></div>
+<div title="High-status areas, 6–12 km: -0.75 °C (32 areas)" style="position: absolute; left: calc(38.9% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #1F5E6B; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<div title="Other areas, 6–12 km: +0.57 °C (184 areas)" style="position: absolute; left: calc(68.2% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #A3421C; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<span style="position: absolute; left: 53.6%; top: -2px; transform: translateX(-50%); font-size: 13px; font-weight: 700; white-space: nowrap; color: #17191E">1.3 °C</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 16px">
+<span style="flex: 0 0 130px; font-size: 15px; font-weight: 600">Over 12 km</span>
+<div style="flex: 1 1 300px; position: relative; height: 44px">
+<div style="position: absolute; left: 55.6%; top: 0; bottom: 0; border-left: 1px dashed #B9B3A6"></div>
+<div style="position: absolute; left: 14.4%; width: 43.1%; top: 21px; height: 2px; background: #CFC9BC"></div>
+<div title="High-status areas, Over 12 km: -1.85 °C (44 areas)" style="position: absolute; left: calc(14.4% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #1F5E6B; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<div title="Other areas, Over 12 km: +0.09 °C (101 areas)" style="position: absolute; left: calc(57.6% - 7px); top: 15px; width: 14px; height: 14px; border-radius: 50%; background: #A3421C; box-shadow: 0 0 0 2px #FFFFFF"></div>
+<span style="position: absolute; left: 36.0%; top: -2px; transform: translateX(-50%); font-size: 13px; font-weight: 700; white-space: nowrap; color: #17191E">1.9 °C</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px"><span style="flex: 0 0 130px"></span><div style="flex: 1 1 300px; position: relative; height: 22px; font-size: 13px; color: #4A4D55; border-top: 1px solid #D6D2C8">
+<span style="position: absolute; left: 11.1%; top: 4px; transform: translateX(-50%); white-space: nowrap">-2 °C</span><span style="position: absolute; left: 33.3%; top: 4px; transform: translateX(-50%); white-space: nowrap">-1 °C</span><span style="position: absolute; left: 55.6%; top: 4px; transform: translateX(-50%); white-space: nowrap">0</span><span style="position: absolute; left: 77.8%; top: 4px; transform: translateX(-50%); white-space: nowrap">+1 °C</span><span style="position: absolute; left: 100.0%; top: 4px; transform: translateX(-50%); white-space: nowrap">+2 °C</span></div></div>
+</div>
+</div>
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Figure 3 · Population-weighted means of the surface temperature anomaly (see Figure 1). Distance measured from each planning area to the Brandenburg Gate. Under 6 km: 10 high-status and 165 other areas; 6–12 km: 32 and 184; over 12 km: 44 and 101. Analysis: Eugenio Mincione.</figcaption>
+</figure>
+<article style="max-width: 700px; margin: 0 auto">
+<div style="border-left: 4px solid #1F5E6B; padding: 4px 0 4px 20px; margin: 8px 0 24px"><p style="margin: 0; font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.6; color: #2B2E35"><strong>Method and limits.</strong> Landsat measures the temperature of surfaces, not of the air people breathe; surface and air temperature are related but not the same, and the satellite passes over at midday, not in the hottest hours of the afternoon. Values were averaged over built-up blocks, not weighted by where exactly people live inside a planning area. Benefit receipt (Transferbezug) counts recipients of SGB II/XII benefits who are not registered as unemployed. Social data describe areas, not individuals: not every resident of a poor area is poor, and the statistical relationships here say nothing about any single household. Correlations are Spearman rank correlations; the regressions are weighted by population with robust standard errors (Transferbezug and surface heat: ρ = 0.37; with distance and NDVI as controls, R² = 0.74). Robustness: the five scenes were chosen to span 2019–2025; repeating the analysis with all twelve June–August scenes with less than 10% cloud cover gives a gap of 2.0 °C (instead of 1.9), the gap appears in every single scene (1.3–3.8 °C), and the share of high-status residents in the hottest fifth is 5% (instead of 3%). Indoor temperatures, which matter most for health, are not covered by any of these data.</p></div>
+</article>
+</section>
+<!-- CHAPTER 3 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 3</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">The longest nights</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Daytime heat is only half the story. What harms health most is when the night brings no relief. For this, the satellite data are not enough, so I used the city's own climate model. It shows how warm the air is at 4 a.m. on a still summer night, block by block. Across the planning areas the values range from 16.1 °C on the rural fringe to 19.3 °C in the densest inner-city blocks.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Here the pattern shifts. At night, the main divide is between the centre and the edge: the large housing estates of Marzahn or Spandau, with wide open spaces between their towers, cool down; the closed courtyards of Wedding, Kreuzberg and Neukölln do not. On their own, unemployment and benefit receipt say little about night-time heat once location is taken into account. One group, however, stands out: older people living in poverty.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The social monitoring records the share of residents above the statutory retirement age who depend on basic income support in old age (Grundsicherung im Alter). Where this old-age poverty is highest, nights are hottest. Of the 134 planning areas in the top quarter for old-age poverty, 68, or half, are also in the top quarter for night-time temperature, twice as many as chance would predict. 546,000 people live in these 68 areas, most of them in Friedrichshain-Kreuzberg, northern Neukölln and Mitte (including Moabit and Wedding), with smaller clusters in Charlottenburg and Schöneberg (Figure 4). The link holds even at the same distance from the centre.</p>
+</article>
+
+<figure style="max-width: 1000px; margin: 40px auto; padding: 0 24px">
+<img src="map-issue-03b.webp" alt="Map of Berlin highlighting 68 planning areas in copper that are in the top quarter both for night-time air temperature and for old-age poverty. They form a dense cluster in the inner city: Moabit, Wedding and Gesundbrunnen in Mitte, northern Neukölln, Kreuzberg and parts of Schöneberg and Charlottenburg. Areas with only hot nights surround this core; areas with only high old-age poverty appear in Spandau, Reinickendorf, the Märkisches Viertel and Marzahn." style="width: 100%; height: auto; display: block">
+<figcaption style="margin-top: 10px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; line-height: 1.5; color: #4A4D55">Figure 4 · Top quarter of the 536 rated planning areas: night-time air temperature of at least 18.26 °C (modelled 2 m air temperature at 4 a.m., area-weighted mean of built-up blocks) and old-age poverty of at least 10.8% (share of residents above the statutory retirement age receiving basic income support, data as of 31 December 2022). Data: SenSBW &amp; GEO-NET (2025), Umweltatlas Berlin, climate analysis 2022 (FITNAH-3D, 10 m grid); SenSBW (2024). Analysis and map: Eugenio Mincione.</figcaption>
+</figure>
+<article style="max-width: 700px; margin: 0 auto; padding: 8px 24px 0">
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The two neighbourhoods from the beginning sit at opposite ends of every one of these measures. In the Huttenkiez in Moabit, 24 per cent of residents receive welfare benefits (not counting the registered unemployed), and 28 per cent of pensioners depend on basic income support. Its built-up blocks are 3.6 °C hotter than the city median at midday, its vegetation index is 0.18, and at 19.3 °C its modelled night is the warmest of all 536 planning areas. In Nikolassee, the figures are 4 and 3 per cent. Its blocks are 3.9 °C cooler than the median, its vegetation index is 0.68, and its night 17.3 °C.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">A difference of two degrees at night sounds small. For an 85-year-old woman with heart failure on the fourth floor of a building without insulation, it can decide whether her body gets the few hours of recovery it needs.</p>
+</article>
+<!-- CHAPTER 4 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 4</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">What the map does not show</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The data also complicate the simplest version of this story. Berlin's poorest neighbourhoods are not its very hottest: areas with a very low social status are, on average, no hotter than areas with a medium one. The very hottest surfaces lie in mixed areas full of factories, warehouses and large flat roofs, such as Marienfelde or Borsigwalde, whose residents mostly have a medium status. Prenzlauer Berg, one of the most sought-after Altbau districts in the city, has some of its warmest nights. And some of the poorest areas are relatively cool: in Marzahn West, where almost one in five residents receives welfare benefits, the prefabricated blocks stand between generous green spaces, and the modelled night is two degrees cooler than in the Huttenkiez.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">So the sharpest line in Berlin does not run between poor and middle-class neighbourhoods. It runs between the best-off fifth of the city and everyone else. Divided by benefit receipt into five equal groups of planning areas, the fifth with the fewest people on benefits is 0.7 °C cooler than the median; the other four are between 0.6 and 1.0 °C hotter, with the poorer two fifths slightly hotter than the middle. Cool surfaces at midday are largely a privilege of the villa suburbs.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">That fits what other researchers have found. In Berlin, lower-income groups are concentrated in central areas with little green cooling, and Berlin is one of four of the 14 European metropolitan areas studied where low income and missing green cooling overlap most strongly in space (Rocha et al., 2024). Researchers who surveyed Berlin households found only a weak direct link between income and perceived heat, but a clearer one between perceived heat and dense building types (Iqbal et al., 2025). Heat follows the built form of the city, and the built form follows a long history of who could afford to live where.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">What the map cannot show is perhaps the most important part: who can protect themselves indoors. A wealthy household in a hot Kreuzberg Altbau may own air conditioning, travel in August or sleep in the country. A pensioner on basic income support in Wedding usually cannot. Exposure is shared more widely than vulnerability.</p>
+</article>
+<!-- CHAPTER 5 -->
+<article style="max-width: 700px; margin: 0 auto; padding: 56px 24px 0">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Chapter 5</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Shade as policy</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Berlin has begun to respond. In August 2025 the Senate health department launched a heat protection portal with a map of cool places where people can escape the heat (SenWGP, 2025). A citywide heat action plan followed in November 2025 (Senatskanzlei Berlin, 2025). And after pressure from the citizens' initiative BaumEntscheid, the House of Representatives passed the BäumePlus law in November 2025, which for the first time sets legally binding targets for planting street trees in Berlin for climate adaptation. It foresees around 560,000 new street and park trees by 2040, for a total of one million, and about 170 "heat districts" in heavily sealed areas where streets and courtyards are to be unsealed and greened (Entwicklungsstadt, 2025a). Shortly afterwards, however, the governing coalition committed only about one billion euros up to 2040, against estimated costs of up to 3.2 billion (Entwicklungsstadt, 2025b).</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">The analysis here suggests two things for how that money is spent. First, heat and social data should be read together. A plan guided only by temperature will spend as much in well-off Prenzlauer Berg as in Moabit; a plan guided only by poverty will miss that the large estates on the edge are already relatively green. Where both overlap, in Figure 4, is where trees, shade and cool rooms protect the most vulnerable people.</p>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">Second, greening must not price out the people it is meant to protect. A study of 28 cities in Europe and North America found that in 17 of them, new parks and greenery in the 1990s and 2000s were followed by gentrification (Anguelovski et al., 2022). If Berlin's new trees end up raising rents in the Huttenkiez, the heat will simply move with the people who can no longer afford to stay.</p>
+</article>
+
+<!-- THREE LEVERS -->
+<section style="max-width: 1040px; margin: 48px auto; padding: 0 24px">
+<div style="background: #E9E6DF; padding: clamp(24px, 4vw, 40px)">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Three levers</p>
+<h3 style="margin: 0 0 24px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.1">What it would take to share the shade</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<div style="background: #FFFFFF; border-top: 4px solid #1F5E6B; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #1F5E6B">Lever 1</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Plant where heat and poverty meet</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Select the new "heat districts" with social data as well as climate data, so that the first trees go to areas like Moabit, Wedding and northern Neukölln.</p>
+</div>
+<div style="background: #FFFFFF; border-top: 4px solid #A3421C; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #A3421C">Lever 2</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Green without displacement</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Pair greening with tenant protection, so that a shaded street does not become a reason to raise the rent (Anguelovski et al., 2022).</p>
+</div>
+<div style="background: #FFFFFF; border-top: 4px solid #8A5F14; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Libre Franklin', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8A5F14">Lever 3</span>
+<h3 style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.1">Reach people indoors</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2B2E35">Trees take decades to grow. Until then, the people most at risk are old, poor and alone in hot flats. Care services, neighbours and cool rooms nearby reach them sooner.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<section style="max-width: 1040px; margin: 72px auto 0; padding: 0 24px">
+<div style="border-top: 4px solid #17191E; padding-top: 48px">
+<article style="max-width: 700px; margin: 0 auto">
+<p style="margin: 0 0 8px; font-family: 'Libre Franklin', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A3421C">Conclusion</p>
+<h2 style="margin: 0 0 28px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 48px); line-height: 1.05">Shade is a decision</h2>
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">So is Berlin hotter for some? Yes, but not in the way one might expect. The heat of the inner city is shared by the rich and the poor who live there. What is not shared is the cool. Berlin's high-status neighbourhoods are almost two degrees cooler at midday than the rest of the city, and only a tiny fraction of their residents live where it is hottest. At night, the warmest neighbourhoods tend to be those with the most old-age poverty, the group least able to escape the heat.</p>
+
+<p style="margin: 0 0 24px; font-size: 19px; line-height: 1.7">None of this is a law of nature. The cool of Nikolassee is the product of large plots, old trees and forests that were protected while other districts were built up densely for workers. The heat of Moabit is the product of decisions too: about where to build, where to plant, where to seal, and whose comfort counts. Berlin has committed around one billion euros up to 2040 to change that map, against estimated costs of more than three billion. Whether its new trees reach the people who need them most is the measure by which that spending should be judged.</p>
+
+</article>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section style="max-width: 700px; margin: 24px auto 0; padding: 0 24px">
+<div style="border-top: 1px solid #17191E; padding-top: 18px; font-family: 'Libre Franklin', sans-serif; font-size: 15px; line-height: 1.6; color: #2B2E35"><strong style="color: #17191E">Eugenio Mincione</strong> studies geography, specialising in geoinformatics and applied physical geography, alongside political science at LMU Munich. He is currently based in Madrid.</div>
+</section>
+
+<!-- REFERENCES -->
+<section style="background: #E9E6DF; margin-top: 72px; padding: 64px 24px 80px">
+<div style="max-width: 1040px; margin: 0 auto">
+<h2 style="margin: 0 0 8px; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 36px">References</h2>
+<p style="margin: 0 0 32px; font-family: 'Libre Franklin', sans-serif; font-size: 14px; line-height: 1.6; color: #4A4D55; max-width: 760px">This article draws on peer-reviewed research, official statistics and open spatial data from the Berlin Senate and the US Geological Survey. The two news sources are marked as such and are used only for details of the new tree law and its funding. The GIS analysis and all graphics are original. Citation style: APA 7.</p>
+<ol style="margin: 0; padding: 0 0 0 20px; columns: 2 340px; column-gap: 48px; font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.55; color: #2B2E35">
+<li style="margin: 0 0 14px; break-inside: avoid">Abgeordnetenhaus Berlin. (2025). <em>Hitze in Berlin – wie heiß ist es?</em> Schriftliche Anfrage des Abgeordneten Benedikt Lux (Grüne) und Antwort des Senats, Drucksache 19/23353. <a href="https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23353.pdf">pardok.parlament-berlin.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">an der Heiden, M. (2025). Hitzebedingte Mortalität in Deutschland 2023 und 2024. <em>Epidemiologisches Bulletin</em>, 19/2025, 3–9. Robert Koch-Institut. <a href="https://doi.org/10.25646/13135">doi:10.25646/13135</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Anguelovski, I., Connolly, J. J. T., Cole, H., Garcia-Lamarca, M., Triguero-Mas, M., Baró, F., Martin, N., Conesa, D., Shokry, G., Pérez del Pulgar, C., Argüelles Ramos, L., Matheney, A., Gallez, E., Oscilowicz, E., López Máñez, J., Sarzo, B., Beltrán, M. A., &amp; Martinez Minaya, J. (2022). Green gentrification in European and North American cities. <em>Nature Communications, 13</em>, 3816. <a href="https://doi.org/10.1038/s41467-022-31572-1">doi:10.1038/s41467-022-31572-1</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ärztekammer Berlin. (2026, June 8). <em>Aktionsbündnis Hitzeschutz Berlin fordert: Pflegebedürftige Menschen besser vor Hitze schützen</em> [Press release]. <a href="https://www.aekb.de/fileadmin/04_aktuelles/Pressemitteilungen/2026-06-08_pm_Hitzeschutz-Pressegespraech.pdf">aekb.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Ballester, J., Quijal-Zamorano, M., Méndez Turrubiates, R. F., Pegenaute, F., Herrmann, F. R., Robine, J. M., Basagaña, X., Tonne, C., Antó, J. M., &amp; Achebak, H. (2023). Heat-related mortality in Europe during the summer of 2022. <em>Nature Medicine, 29</em>, 1857–1866. <a href="https://doi.org/10.1038/s41591-023-02419-z">doi:10.1038/s41591-023-02419-z</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Chakraborty, T., Hsu, A., Manya, D., &amp; Sheriff, G. (2019). Disproportionately higher exposure to urban heat in lower-income neighborhoods: A multi-city perspective. <em>Environmental Research Letters, 14</em>, 105003. <a href="https://doi.org/10.1088/1748-9326/ab3b99">doi:10.1088/1748-9326/ab3b99</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Entwicklungsstadt. (2025a, November). <em>Berlin beschließt BäumePlus-Gesetz: 560.000 neue Stadtbäume bis 2040</em> [News article]. <a href="https://www.entwicklungsstadt.de/berlin-beschliesst-baeumeplus-gesetz-560-000-neue-stadtbaeume-bis-2040/">entwicklungsstadt.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Entwicklungsstadt. (2025b, November 12). <em>Weniger Geld für Berlins Stadtgrün: Koalition halbiert Budget für BäumePlus-Gesetz</em> [News article]. <a href="https://www.entwicklungsstadt.de/weniger-geld-fuer-berlins-stadtgruen-koalition-halbiert-budget-fuer-baeumeplus-gesetz/">entwicklungsstadt.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Iqbal, N., Ravan, M., Mitraka, Z., Birkmann, J., Grimmond, S., Hertwig, D., Chrysoulakis, N., Somarakis, G., Wendnagel-Beck, A., &amp; Panagiotakis, E. (2025). How does perceived heat stress differ between urban forms and human vulnerability profiles? Case study Berlin. <em>Natural Hazards and Earth System Sciences, 25</em>, 2481–2502. <a href="https://doi.org/10.5194/nhess-25-2481-2025">doi:10.5194/nhess-25-2481-2025</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Mashhoodi, B., &amp; Muñoz Unceta, P. (2024). Urban form and surface temperature inequality in 683 European cities. <em>Sustainable Cities and Society, 113</em>, 105690. <a href="https://doi.org/10.1016/j.scs.2024.105690">doi:10.1016/j.scs.2024.105690</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Microsoft. (2025). <em>Planetary Computer: Landsat Collection 2 Level-2</em> [Data catalogue]. <a href="https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2">planetarycomputer.microsoft.com</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Rocha, A. D., Vulova, S., Förster, M., Gioli, B., Matthews, B., Helfter, C., Meier, F., Steeneveld, G.-J., Barlow, J. F., Järvi, L., Chrysoulakis, N., Nicolini, G., &amp; Kleinschmit, B. (2024). Unprivileged groups are less served by green cooling services in major European urban areas. <em>Nature Cities, 1</em>, 424–435. <a href="https://doi.org/10.1038/s44284-024-00077-x">doi:10.1038/s44284-024-00077-x</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Scherer, D., Fehrenbach, U., Lakes, T., Lauf, S., Meier, F., &amp; Schuster, C. (2014). Quantification of heat-stress related mortality hazard, vulnerability and risk in Berlin, Germany. <em>DIE ERDE, 144</em>(3–4), 238–259. <a href="https://doi.org/10.12854/erde-144-17">doi:10.12854/erde-144-17</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">Senatskanzlei Berlin. (2025, November 25). <em>Hitzeaktionsplan für Berlin beschlossen</em> [Press release]. <a href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1619611.php">berlin.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">SenSBW – Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin. (2024). <em>Monitoring Soziale Stadtentwicklung Berlin 2023</em> [Report and WFS data service mss_2023]. <a href="https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2023/">berlin.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">SenSBW &amp; GEO-NET Umweltconsulting. (2025). <em>Umweltatlas Berlin: Klimaanalyse und Klimabewertung 2022</em> (documentation dated 2 June 2025) [Data and documentation; WFS services ua_klimaanalyse_2022 and ua_klimabewertung_2022]. <a href="https://www.berlin.de/umweltatlas/klima/klimaanalyse/2022/einleitung/">berlin.de/umweltatlas</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">SenWGP – Senatsverwaltung für Wissenschaft, Gesundheit und Pflege Berlin. (2025, August 13). <em>Abkühlung an heißen Tagen – Senatsgesundheitsverwaltung veröffentlicht Hitzeschutzportal und Karte zu kühlen Orten</em> [Press release]. <a href="https://www.berlin.de/sen/wgp/presse/2025/pressemitteilung.1589580.php">berlin.de</a></li>
+<li style="margin: 0 0 14px; break-inside: avoid">U.S. Geological Survey. (n.d.). <em>Landsat 8-9 OLI/TIRS Collection 2 Level-2</em> [Data set; surface temperature band ST_B10, QA_PIXEL, surface reflectance bands 4 and 5]. <a href="https://doi.org/10.5066/P9OGBGM6">doi:10.5066/P9OGBGM6</a></li>
+</ol>
+</div>
+</section>
+</main>
+<footer class="site-foot"><div class="wrap">
+<span>UNEVEN · The geography of who wins and who pays</span>
+<span><a href="https://www.instagram.com/uneven.magazine/">Instagram @uneven.magazine</a> · <a href="contact.html">Contact</a></span>
+</div></footer>
+</body>
+</html>
